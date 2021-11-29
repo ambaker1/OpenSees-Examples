@@ -1,2 +1,2 @@
 # OpenSees-Examples
- OpenSees example scripts (Tcl)
+Various OpenSees example scripts.
