@@ -2,3 +2,4 @@ ParameterStudy/Data
 ParameterStudy/temp*.dat
 ParameterStudy/results.csv
 *.out
+*.docx
