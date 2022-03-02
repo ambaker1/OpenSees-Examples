@@ -24,7 +24,7 @@ mass  4    $m   $m    0
 
 # Set some parameters
 set record RSN953_NORTHR_MUL009
-set factor 5.0
+if {![info exists factor]} {set factor 1.0}
 set dataDir data2/$factor
 file mkdir $dataDir
 
@@ -104,7 +104,7 @@ proc analyzeStep {dt {epsilon 1e-6}} {
 # Run analysis with convergence control
 set tFinal [expr $nPts * $dt]
 while {[getTime] < $tFinal} {
-    set ok [analyzeStep $dt]
+    set ok [analyzeStep 0.01]
     if {$ok != 0} {
         break
     }

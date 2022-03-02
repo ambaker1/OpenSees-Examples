@@ -23,7 +23,7 @@ mass  4    $m   $m    0
 
 # Set some parameters
 set record RSN953_NORTHR_MUL009
-set factor 5.0
+if {![info exists factor]} {set factor 1.0}
 set dataDir data1/$factor
 file mkdir $dataDir
 
