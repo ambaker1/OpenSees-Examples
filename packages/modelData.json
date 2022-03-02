@@ -1,0 +1,36 @@
+{
+"StructuralAnalysisModel": {
+	"BIM": "unknown",
+	"description": "",
+	"engineer": "",
+	"units": {
+		"force": "",
+		"length": "",
+		"time": "",
+		"temperature": ""
+	},
+	"properties": {
+		"uniaxialMaterials": [
+			{"name": "1", "type": "ElasticMaterial", "Epos": 1000, "Eneg": 1000, "eta": 0}
+		],
+		"ndMaterials": [
+
+		],
+		"sections": [
+
+		],
+		"crdTransformations": [
+
+		]
+	},
+	"geometry": {
+		"nodes": [
+			{"name": 1, "ndf": 3, "crd": [0, 0]},
+			{"name": 2, "ndf": 3, "crd": [1, 0]}
+		],
+		"elements": [
+			{"name": 1, "type": "Truss", "nodes": [1, 2], "A": 10, "massperlength": 0, "material": "1"}
+		]
+	}
+}
+}
