@@ -5,7 +5,7 @@
 #   Changed earthquake record for example
 #   Added "factor" for scaling earthquake
 #   Added "dataDir" for recorders
-#   Fixed backwards compatibility with -Umfpack eigen solver.
+#   Removed unsupported -Umfpack eigen option.
 #   Changed Tcl convergence algorithm
 
 # Do operations of RCFrameGravity by sourcing in the tcl file

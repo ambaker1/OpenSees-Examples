@@ -5,7 +5,7 @@
 #   Changed earthquake record for example
 #   Added "factor" for scaling earthquake
 #   Added "dataDir" for recorders
-#   Fixed backwards compatibility with -Umfpack eigen solver.
+#   Removed unsupported -Umfpack eigen option.
 
 # Do operations of RCFrameGravity by sourcing in the tcl file
 source RCFrameGravity.tcl
@@ -112,7 +112,8 @@ if {$ok == 0} {
 }
 
 # Perform an eigenvalue analysis
-puts "eigen values at end of transient: [eigen -Umfpack 2]"
+system UmfPack
+puts "eigen values at end of transient: [eigen 2]"
 
 # Print state of node 3
 print node 3
